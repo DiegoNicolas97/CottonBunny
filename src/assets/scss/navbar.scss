@@ -1,0 +1,58 @@
+.navbar-landing {
+    margin-top: -20px;
+    background-image: url("../static/images/navbarbg.PNG");
+    background-position: center; /* Center the image */
+    background-repeat: no-repeat; /* Do not repeat the image */
+    background-size: cover; /* Resize the background image to cover the entire container */
+    height: 300px;
+    .row-1-navbar{
+        &__logo {
+            width: 125px;
+            margin-top: -60px;
+            //margin-bottom: 30px;
+        }
+        &__title {
+            margin-top: -20px;
+            margin-left: 5px;
+            font-family: Nunito;
+            font-size: 40px;
+            font-weight: 800;
+            color: $color-primary;
+            -webkit-text-stroke-width: 1.5px;
+            -webkit-text-stroke-color: white;
+        }
+        &__subtitle {
+            margin-left: 110px;
+            font-family: Nunito;
+            font-size: 24px;
+            font-weight: 700;
+            color: white;
+            //margin-left: auto;
+        }
+        &__menu {
+            margin-left: 390px;
+            .nav-link {
+                margin-left: 20px;
+                font-family: Nunito;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+            }
+        }
+    }
+    .row-2-navbar{
+        width: 100%;
+        margin-top: 200px;
+        margin-right: 600px;
+        margin-left: -780px;
+        &__btn-search{
+            width: 37px;
+        }
+        &__input-text{
+            border-radius: 22px;
+            font-family: Nunito;
+            font-weight: 500;
+            font-size: 20px
+        }
+    }
+}
