@@ -11,7 +11,7 @@
             width: 110px;
         }
         &__title {
-            margin-left: 5px;
+            margin-left: 1%;
             font-family: Nunito;
             font-size: 40px;
             font-weight: 800;
@@ -28,7 +28,7 @@
             //margin-left: auto;
         }
         &__menu {
-            margin-left: 390px;
+            margin-left: 300px;
             .nav-link {
                 margin-left: 20px;
                 font-family: Nunito;
@@ -47,6 +47,7 @@
             }
         }
         &__btn-carrito{
+            margin-top: -15px;
             width: 100px;
             &__img{
                 width: 60px;
@@ -63,7 +64,7 @@
         width: 100%;
         margin-top: 180px;
         margin-right: 670px;
-        margin-left: -930px;
+        margin-left: -820px;
         &__btn-search{
             width: 37px;
         }
@@ -74,4 +75,169 @@
             font-size: 20px
         }
     }
+}
+
+@include mq-max(large){
+    .navbar-landing {
+        
+        .row-1-navbar{
+            &__title {
+                font-size: 36px;
+            }
+            &__subtitle {
+                margin-left: 100px;
+                font-size: 22px;
+            }
+            &__menu {
+                margin-left: 160px;
+            }
+           
+        }
+        .row-2-navbar{
+            margin-right: 500px;
+            margin-left: -670px;
+        }
+    }
+}
+
+@include mq-max(medium){
+    .navbar-landing {
+        .row-1-navbar{
+            margin-top: 20px;
+            &__btn-toggler{
+                margin-left: 85%;
+                &__icon{
+                    width: 50px;
+                }
+            }
+            &__menu {
+                margin-left: 80%;
+                .nav-link {
+                    margin-left: 0px;
+                    font-size: 18px;
+                }
+                &__btn-ingresa{
+                    margin-top: 0px;
+                    font-size: 18px;
+                }
+            }
+            &__btn-carrito{
+                margin-top: 0px;
+                background-color: $color-secondary;
+                border-radius: 20px;
+                &__img{
+                    width: 40px;
+                }
+                &__label{
+                    font-family: Nunito;
+                    font-size: 17px;
+                    font-weight: 600;
+                }
+            } 
+        }
+        .row-2-navbar{
+            margin-top: 0px;
+            margin-right: 70px;
+            margin-left: 0px;
+        }
+    }    
+}
+@include mq-max(small){
+    .navbar-landing {
+        .row-1-navbar{
+            margin-top: 20px;
+            &__btn-toggler{
+                margin-left: 85%;
+                &__icon{
+                    width: 50px;
+                }
+            }
+            &__menu {
+                margin-left: 83%;
+                .nav-link {
+                    margin-left: 0px;
+                    font-size: 14px;
+                }
+                &__btn-ingresa{
+                    margin-top: 0px;
+                    font-size: 14px;
+                }
+            }
+            &__btn-carrito{
+                width: 75px;
+                &__img{
+                    width: 32px;
+                }
+                &__label{
+                    font-size: 14px;
+                }
+            } 
+        }
+        .row-2-navbar{
+            margin-top: 0px;
+            margin-right: 70px;
+            margin-left: 0px;
+        }
+    }    
+}
+
+@include mq-max(xs-small){
+    .navbar-landing {
+        height: 160px;
+        .row-1-navbar{
+            margin-top: 0px;
+            &__logo {
+                width: 60px;
+            }
+            &__title {
+                margin-left: 10px;
+                font-size: 25px;
+            }
+            &__subtitle {
+                margin-left: 50px;
+                font-size: 18px;
+            }
+            &__btn-toggler{
+                margin-left: 80%;
+                &__icon{
+                    width: 32px;
+                }
+            }
+            &__menu {
+                margin-left: 72%;
+                .nav-link {
+                    margin-left: 0px;
+                    font-size: 14px;
+                }
+                &__btn-ingresa{
+                    margin-top: 0px;
+                    font-size: 14px;
+                }
+            }
+            &__btn-carrito{
+                width: 75px;
+                &__img{
+                    width: 30px;
+                }
+                &__label{
+                    font-size: 11px;
+                }
+            } 
+        }
+        .row-2-navbar{
+            margin-top: 20px;
+            margin-right: 20px;
+            margin-left: 0px;
+            &__btn-search{
+                margin-top: -10px;
+                width: 20px;
+            }
+            &__input-text{
+                border-radius: 22px;
+                font-family: Nunito;
+                font-weight: 500;
+                font-size: 12px
+            }
+        }
+    }    
 }
