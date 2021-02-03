@@ -1,18 +1,16 @@
 .navbar-landing {
-    margin-top: -20px;
     background-image: url("../static/images/navbarbg.PNG");
     background-position: center; /* Center the image */
     background-repeat: no-repeat; /* Do not repeat the image */
     background-size: cover; /* Resize the background image to cover the entire container */
-    height: 300px;
+    height: 210px;
     .row-1-navbar{
+        margin-top: -1%;
+        width: 100%;
         &__logo {
-            width: 125px;
-            margin-top: -60px;
-            //margin-bottom: 30px;
+            width: 110px;
         }
         &__title {
-            margin-top: -20px;
             margin-left: 5px;
             font-family: Nunito;
             font-size: 40px;
@@ -38,13 +36,34 @@
                 font-weight: 700;
                 color: white;
             }
+            &__btn-ingresa{
+                margin-top: -4px;
+                background-color: $color-secondary;
+                font-family: Nunito;
+                font-size: 20px;
+                font-weight: 700;
+                color: white;
+                border-radius: 20px;
+            }
+        }
+        &__btn-carrito{
+            width: 100px;
+            &__img{
+                width: 60px;
+            }
+            &__label{
+                font-family: Nunito;
+                font-size: 17px;
+                font-weight: 600;
+                color: white;
+            }
         }
     }
     .row-2-navbar{
         width: 100%;
-        margin-top: 200px;
-        margin-right: 600px;
-        margin-left: -780px;
+        margin-top: 180px;
+        margin-right: 670px;
+        margin-left: -930px;
         &__btn-search{
             width: 37px;
         }
